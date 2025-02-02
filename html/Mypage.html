@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 변경</title>
+    <style>
+        body {
+            background-color: #eeeeee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .page {
+            width: 1200px;
+            height: 1080px;
+            background-color: #F8F8FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container {
+            width: 640px;
+            height: 713px;
+            background-color: #F8F8FF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .image-container {
+            width: 640px;
+            height: 183px;
+            background: url('/image/html/mypage_hot_air_ballon.png') no-repeat center center/cover;
+        }
+
+        .profile-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid white;
+            background: url('profile_icon.png') no-repeat center center/cover;
+            position: relative;
+            top: -40px;
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            width: 80%;
+        }
+
+        .input-label {
+            font-size: 14px;
+            color: #333;
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            background: #F8F8FF;
+            padding: 0 5px;
+        }
+
+        .input-box {
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #A39C9C;
+            font-size: 16px;
+            color: #333;
+            background: transparent;
+            outline: none;
+            width: 100%;
+        }
+
+        .check-btn {
+            width: 77px;
+            height: 21px;
+            background-color: #4fa3c4;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .edit-btn {
+            background-color: #4fa3c4;
+            color: white;
+        }
+
+        .back-btn {
+            background-color: #d3d3d3;
+            color: black;
+        }
+
+        .delete-btn {
+            background-color: #a39c9c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="image-container"></div>
+            <div class="profile-icon"></div>
+            
+            <div class="input-group">
+                <label class="input-label">닉네임</label>
+                <input type="text" class="input-box">
+                <button class="check-btn">중복확인</button>
+            </div>
+            
+            <div class="input-group">
+                <label class="input-label">비밀번호</label>
+                <input type="password" class="input-box">
+            </div>
+            
+            <div class="input-group">
+                <label class="input-label">비밀번호 확인</label>
+                <input type="password" class="input-box">
+            </div>
+            
+            <div class="buttons">
+                <button class="edit-btn">수정</button>
+                <button class="back-btn">돌아가기</button>
+                <button class="delete-btn">회원탈퇴</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
